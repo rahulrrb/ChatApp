@@ -1,5 +1,6 @@
 package com.rrb.chatapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -19,7 +20,12 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         val toggle = ActionBarDrawerToggle(
-                this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
+            this,
+            drawer_layout,
+            toolbar,
+            R.string.navigation_drawer_open,
+            R.string.navigation_drawer_close
+        )
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
     }
@@ -32,14 +38,16 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun loginBtnNavClicked(view: View){
+    fun loginBtnNavClicked(view: View) {
+        val loginIntent = Intent(this, LoginActivity::class.java)
+        startActivity(loginIntent)
+    }
+
+    fun addChannelClicked(view: View) {
 
     }
 
-    fun addChannelClicked(view: View){
+    fun sendMessageBtnClicked(view: View) {
 
-    }
-    fun sendMessageBtnClicked(view: View){
-        
     }
 }
