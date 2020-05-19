@@ -1,6 +1,7 @@
 package com.rrb.chatapp
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.appcompat.app.AppCompatActivity
@@ -29,5 +30,16 @@ class MainActivity : AppCompatActivity() {
         } else {
             super.onBackPressed()
         }
+    }
+
+    fun loginBtnNavClicked(view: View){
+
+    }
+
+    fun addChannelClicked(view: View){
+
+    }
+    fun sendMessageBtnClicked(view: View){
+        
     }
 }

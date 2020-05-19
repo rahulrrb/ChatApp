@@ -13,4 +13,7 @@
 
     <string name="home_second">Home Second</string>
     <string name="rrb">RRB</string>
+    <string name="login">Login</string>
+    <string name="rrb_gmail_com">rrb@gmail.com</string>
+    <string name="addchannel">addChannel</string>
 </resources>
